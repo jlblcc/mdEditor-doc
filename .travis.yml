@@ -1,10 +1,9 @@
 language: node_js
 node_js: lts/*
-before_script:
-  - npm install -g gitbook-cli
-  - gitbook install
-script: gitbook build
-before_deploy: 
+before_install:
+  - sudo apt-get -y install calibre
+script: npm run publish
+before_deploy:
   - touch _book/.nojekyll
   - echo "guide.mdeditor.org" > _book/CNAME
 deploy:
