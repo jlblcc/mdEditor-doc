@@ -22,9 +22,9 @@
     "publish": "concurrently \"npm run build:web\" \"npm run build:pdf\"",
     "build:all": "concurrently \"npm run build:web\" \"npm run build:pdf\" \"npm run build:epub\" \"npm run build:mobi\"",
     "build:web": "honkit build",
-    "build:pdf": "honkit pdf ./ _book/mdEditor-guide.pdf",
-    "build:epub": "honkit epub ./ _book/mdEditor-guide.epub",
-    "build:mobi": "honkit mobi ./ _book/mdEditor-guide.mobi",
+    "build:pdf": "honkit pdf ./ _book/mdeditor-guide.pdf",
+    "build:epub": "honkit epub ./ _book/mdeditor-guide.epub",
+    "build:mobi": "honkit mobi ./ _book/mdeditor-guide.mobi",
     "help": "honkit --help"
   },
   "repository": {
